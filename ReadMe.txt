@@ -1,6 +1,8 @@
 1.对于spring-boot不能打包的问题,
     解决版本是重新引入一个maven新的库就可以啦.
 2.每个模块下面也有对应的readMe文件.
+
+http://book.itmuch.com
   
   
   
