@@ -2,12 +2,21 @@ server:
   port: 8040
 spring:
   application:
-    name: microservice-config-server
+    name: wanghao-microservice-config-server
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/eacdy/spring-cloud-study/     # 配置git仓库的地址
+          uri: https://github.com/huahangwanghao/wanghao-springcloud-microservice-study/     # 配置git仓库的地址
           search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username:                                             # git仓库的账号
-          password:                                             # git仓库的密码
+          username:                                            # git仓库的账号
+          password:
+                 
+
+
+
+#这个是git地址必须是可访问的,下面的用户名/密码可以为空,
+#只要保证能够拉取下来上面库(config-repo)里面的内容就好
+#
+#
+#

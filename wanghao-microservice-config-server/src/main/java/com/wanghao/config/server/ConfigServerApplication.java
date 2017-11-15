@@ -19,7 +19,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  * /{label}/{application}-{profile}.properties
  *
  * 例如本例：可使用以下路径来访问microservice-config-client-dev.properties：
- * http://localhost:8040/microservice-config-client-dev.properties
+ * http://localhost:8040/wanghao-microservice-config-client-dev.properties
  * http://localhost:8040/microservice-config-client/dev
  * ...
  * 
