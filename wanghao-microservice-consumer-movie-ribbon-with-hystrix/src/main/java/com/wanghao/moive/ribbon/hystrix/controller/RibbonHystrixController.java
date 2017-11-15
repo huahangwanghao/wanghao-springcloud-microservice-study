@@ -21,7 +21,7 @@ public class RibbonHystrixController {
     @Autowired
     private RibbonHystrixService ribbonHystrixService;
     
-    @GetMapping("/{id}")
+    @GetMapping("/ribbon/{id}")
     public User findById(@PathVariable("id") Long id){
         return ribbonHystrixService.findById(id);
     }

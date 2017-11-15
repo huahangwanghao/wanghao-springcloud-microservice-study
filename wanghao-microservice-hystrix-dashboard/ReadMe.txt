@@ -1,0 +1,4 @@
+Hystrix Dashboard可以可视化查看实时监控数据。
+我们可以下载hystrix-dashboard的war包部署到诸如Tomcat之类的容器中，本文不做赘述。
+另外Spring Cloud也提供了Hystrix Dashboard的整合，
+下面我们看看Spring Cloud是怎么玩转Hystrix Dashboard的。
