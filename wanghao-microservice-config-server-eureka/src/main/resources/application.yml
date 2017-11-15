@@ -1,0 +1,17 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: wanghao-microservice-config-server-eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huahangwanghao/wanghao-springcloud-microservice-study/
+          search-paths: config-repo
+          username: 
+          password: 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
