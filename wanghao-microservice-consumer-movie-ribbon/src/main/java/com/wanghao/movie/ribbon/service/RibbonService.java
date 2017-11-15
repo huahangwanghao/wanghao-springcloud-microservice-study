@@ -19,7 +19,7 @@ public class RibbonService {
     
     
     public User findById(long id){
-        
+        // http://服务提供者的serviceId/url
         return this.restTemplate.getForObject("http://wanghao-microservice-provider-user/" + id, User.class);
     }
     
