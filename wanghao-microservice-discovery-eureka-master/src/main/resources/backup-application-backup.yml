@@ -1,0 +1,17 @@
+server:
+  port: 18761                    # 指定该Eureka实例的端口
+
+eureka:
+  instance:
+    hostname: peer1         # 指定该Eureka实例的主机名
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer2:18762/eureka/
+  server:
+    enable-self-preservation: false   #去掉保护模式
+    
+spring:
+  application:
+    name: server

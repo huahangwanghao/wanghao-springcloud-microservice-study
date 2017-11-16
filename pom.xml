@@ -26,6 +26,7 @@
         <module>wanghao-microservice-config-server-eureka</module>
         <module>wanghao-microservice-config-client-eureka</module>
         <module>wanghao-microservice-api-gateway</module>
+        <module>wanghao-microservice-discovery-eureka-master</module>
     </modules>
     
     
