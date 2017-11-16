@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: wanghao-microservice-api-gateway
+server:
+  port: 8050
+eureka:
+  instance:
+    hostname: gateway
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+zuul:
+  routes: 
+    user:                                #可以随便写,  user/name/get....等等都可以
+      path: /movie/**                     #想要映射的路径
+      service-id: wanghao-microservice-consumer-movie-ribbon  #相当于做了一个映射
+  
+  ignored-services: wanghao-microservice-provider-user
+      
+      
+      
+#上面就可以使用http://localhost:8050/user/2  这个访问啦.
